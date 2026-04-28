@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galería - Proyecto JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Red de Apoyo Humanitario</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html" class="activo">Galería</a>
+        <a href="presupuesto.html">Donaciones</a>
+        <a href="contacto.html">Sedes</a>
+    </nav>
+    <div id="contenedor_principal">
+        <h1>Galería Fotográfica del Conflicto</h1>
+        <hr />
+
+        <div id="galeria">
+            <div id="visor_principal">
+                <img id="imagen_grande" src="img/foto1.jpg" alt="Imagen principal" width="600">
+            </div>
+
+            <br />
+
+            <div id="miniaturas">
+                <img src="img/foto1.jpg" width="100" onClick="cambiarImagen('img/foto1.jpg')" style="cursor:pointer;">
+                <img src="img/foto2.jpg" width="100" onClick="cambiarImagen('img/foto2.jpg')" style="cursor:pointer;">
+                <img src="img/foto3.jpg" width="100" onClick="cambiarImagen('img/foto3.jpg')" style="cursor:pointer;">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>📍 Dirección Sede Central: Rue de la Paix 10, Ginebra, Suiza.</p>
+        <p>Redes Sociales:
+            <a href="#">[Facebook]</a> |
+            <a href="#">[Twitter/X]</a> |
+            <a href="#">[Instagram]</a>
+        </p>
+        <p><a href="#">Aviso Legal y Política de Privacidad</a></p>
+    </footer>
+</body>
+
+</html>

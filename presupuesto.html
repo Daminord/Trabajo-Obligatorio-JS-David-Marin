@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apoyo Humanitario - Proyecto JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Red de Apoyo Humanitario</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="presupuesto.html" class="activo">Donaciones</a>
+        <a href="contacto.html">Sedes</a>
+    </nav>
+    <div id="contenedor_principal">
+        <h1>Presupuesto de Ayuda Humanitaria</h1>
+
+        <p>Calcula tu aportación para apoyar a las víctimas y a la prensa independiente en la zona de conflicto.</p>
+
+        <form name="form_donacion" action="">
+            <label>Nombre y Apellidos:</label><br />
+            <input type="text" name="nombre" size="40" /><br /><br />
+
+            <label>Correo Electrónico:</label><br />
+            <input type="text" name="email" size="40" /><br /><br />
+
+            <label>Selecciona el tipo de apoyo:</label><br />
+            <select name="tipo_ayuda" onChange="calcularPresupuesto(this.form)">
+                <option value="0">Seleccione una opción...</option>
+                <option value="50">Suministros Médicos Básicos (50€/unidad)</option>
+                <option value="150">Fondo de Refugiados (150€/unidad)</option>
+                <option value="300">Kit Apoyo Prensa Independiente (300€/unidad)</option>
+            </select><br /><br />
+
+            <label>Cantidad (kits/aportaciones):</label><br />
+            <input type="text" name="cantidad" value="1" size="5"
+                onKeyUp="calcularPresupuesto(this.form)" /><br /><br />
+
+            <label><strong>TOTAL PRESUPUESTADO:</strong></label><br />
+            <input type="text" name="total" size="15" readonly value="0 €"
+                style="background-color: #eee;" /><br /><br />
+
+            <input type="checkbox" name="terminos" /> Acepto los términos de la donación y la ley de protección de
+            datos.<br /><br />
+
+            <input type="button" value="Tramitar Presupuesto" onClick="validarFormulario(this.form);" />
+        </form>
+    </div>
+    <footer>
+        <p>📍 Dirección Sede Central: Rue de la Paix 10, Ginebra, Suiza.</p>
+        <p>Redes Sociales:
+            <a href="#">[Facebook]</a> |
+            <a href="#">[Twitter/X]</a> |
+            <a href="#">[Instagram]</a>
+        </p>
+        <p><a href="#">Aviso Legal y Política de Privacidad</a></p>
+    </footer>
+</body>
+
+</html>

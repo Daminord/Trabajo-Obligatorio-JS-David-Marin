@@ -1,0 +1,16 @@
+{
+  "noticias": [
+    {
+      "titulo": "Tensión económica global por el bloqueo en el Estrecho de Ormuz",
+      "contenido": "El Estrecho de Ormuz tensiona la economía global y fractura a la OTAN, mientras el mundo entra en cuenta regresiva. Las negociaciones de cese al fuego continúan en curso tras la mediación inicial de Pakistán."
+    },
+    {
+      "titulo": "Consecuencias políticas en Estados Unidos",
+      "contenido": "El conflicto en Oriente Medio y sus ramificaciones económicas están afectando la confianza pública en la administración estadounidense de cara a las elecciones legislativas de 2026."
+    },
+    {
+      "titulo": "Impacto en las rutas comerciales internacionales",
+      "contenido": "Se mantienen intensos esfuerzos diplomáticos para lograr la reapertura del Estrecho de Ormuz, una ruta comercial fundamental para el suministro de gas, petróleo y otras provisiones a nivel mundial."
+    }
+  ]
+}

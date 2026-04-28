@@ -1,0 +1,133 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#contenedor_principal {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    min-height: 500px; /* Para asegurar que haya scroll y probar el menú fijo */
+}
+
+/* --- CABECERA Y NAVEGACIÓN OBLIGATORIA --- */
+header {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #2c3e50;
+    position: sticky; /* ¡Requisito del profesor: menú fijo al hacer scroll! */
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+nav a.activo {
+    background-color: #e74c3c; /* Resalta la página actual */
+}
+
+/* --- FOOTER OBLIGATORIO --- */
+footer {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #e74c3c;
+}
+
+/* --- MEJORAS VISUALES PARA FORMULARIOS Y ELEMENTOS --- */
+
+/* Estilo para las cajas de formulario */
+form {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Estilo para los campos de texto y desplegables */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que se salgan de la caja */
+    font-family: Arial, sans-serif;
+}
+
+/* Efecto al hacer clic en un campo (Focus) */
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+/* Botones con estilo moderno */
+input[type="button"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el ratón por los botones */
+input[type="button"]:hover {
+    background-color: #c0392b;
+}
+
+/* Mejoras para las imágenes de la galería */
+#galeria img {
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s; /* Animación suave */
+}
+
+#miniaturas img {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#miniaturas img:hover {
+    transform: scale(1.05); /* Las miniaturas crecen un poco al pasar el ratón */
+}
+
+/* Contenedor del mapa para que se adapte bien */
+#contenedor_mapa iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
